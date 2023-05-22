@@ -4,5 +4,10 @@ import org.springframework.http.ResponseEntity;
 
 public interface MessageService {
 
-    public ResponseEntity<String> sendMessage();
+     ResponseEntity<String> helloWorld();
+
+     ResponseEntity<String> sendMessage(String message);
+
+     ResponseEntity<String> sendFanoutMessage(String message);
+
 }
